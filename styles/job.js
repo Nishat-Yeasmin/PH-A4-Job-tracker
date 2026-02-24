@@ -121,6 +121,27 @@ mainContainer.addEventListener('click',function(event)
    
    calculateCount()
  }
+
+else if(event.target.classList.contains('delete-btn'))
+{
+    const parentNode = event.target.parentNode.parentNode;
+
+    const companyName = parentNode.querySelector('.card-title').innerText;
+
+    Interview = Interview.filter(item => item.companyName != companyName);
+
+    Rejected = Rejected.filter(item => item.companyName != companyName);
+
+    parentNode.remove();
+    calculateCount();
+
+    if(currentStatus == 'interview-filter-btn'){
+        renderInterview();
+    }
+    else if(currentStatus == 'rejected-filter-btn'){
+        renderRejected();
+    }
+}
 })
 mainContainer.addEventListener('click',function(event)
 {
