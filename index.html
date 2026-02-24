@@ -21,13 +21,13 @@
 </style>
 </head>
 
-<body class="min-h-screen max-w-[1000px] bg-base-200 mx-auto">
+<body class="min-h-screen max-w-[1000px] bg-base-200 mx-auto px-4 sm:px-6 lg:px-0 max-w-6xl">
 
     <section class="title pt-[60px]">
         <div class="job-title font-bold text-[#002c5c]">
             <h2>Job Application Tracker</h2>
         </div>
-        <div class="title-card pt-5 grid grid-cols-3 gap-4 ">
+        <div class="title-card pt-5 grid grid-cols-1  sm:grid-cols-2 md:grid-cols-3 gap-4 ">
             <div class="card  rounded-lg bg-white  font-medium text-[14px] text-[#323b49] p-5">
                 <p class="font-medium text-[14px] text-[#323b49]">Total</p>
                 <h2 id="total" class="text-[#002c5c] font-bold">8</h2>
@@ -55,7 +55,7 @@
                    <p class="font-medium text-[#64748b]">8 jobs</p>
                 </div>
    
-                <div class="available-btn flex gap-2 pt-6">
+                <div class="available-btn flex flex-wrap gap-2 pt-6">
                        <button onclick="toggleStyle('all-filter-btn')" class="text-white rounded-[4px] bg-blue-600 w-20 h-8 pt-2 pb-2 pl-3 pr-3 font-semibold  hover:scale-105 cursor-pointer text-[12px]" id="all-filter-btn">All</button>
                        <button onclick="toggleStyle('interview-filter-btn')"  class="text-[#64748B] rounded-[4px]  hover:scale-105 cursor-pointer bg-white w-20 h-8 pt-2 pb-2 pl-3 pr-3 font-medium text-[12px]" id="interview-filter-btn">Interview</button>
                        <button onclick="toggleStyle('rejected-filter-btn')"  class="text-[#64748B] rounded-[4px]  hover:scale-105 cursor-pointer  bg-white w-20 h-8 pt-2 pb-2 pl-3 pr-3 font-medium text-[12px]" id="rejected-filter-btn">Rejected</button>
@@ -68,7 +68,7 @@
 
        </section>
 
-      <section id="allCards" class="card grid grid-cols-1 ">
+      <section id="allCards" class="card grid grid-cols-1">
        <div class="each-card p-6 rounded-lg bg-white mt-4">
             <div class="card-title flex justify-between">
            <h2 class="font-semibold text-[18px] text-[#002c5c] leading-6 pb-1">Mobile First Corp</h2>
